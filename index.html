@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Office vacancy rates in downtown Sacramento by building</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .header {
+          text-align: center;
+          background: rgba(255, 255, 255, 0.9);
+          width: 100%;
+      }
+
+      .map-container {
+          width: 100%;
+          height: 76vh;
+          margin-top: 10px;
+      }
+
+      .title-legend {
+          display: flex;
+          gap: 20px;
+          font-size: 13px;
+          font-weight: normal;
+      }
+
+      .legend-key {
+          display: inline-block;
+          width: 11px;
+          height: 11px;
+          margin-right: 5px;
+          border: 0.5px solid black;
+      }
+
+      iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+
+      h5 {
+          font-size: 15px;
+          font-weight: normal;
+          margin-top: 8px;
+          margin-bottom: 18px;
+      }
+
+      h3 {
+          font-size: 18px;
+          margin-top: 8px;
+          margin-bottom: 5px;
+      }
+
+      #credit {
+          color: #909090;
+          font-size: 12px;
+          margin-bottom: 5px;
+      }
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <h3>Office vacancy rates in downtown Sacramento by building</h3>
+        <h5>Click on a building for details. Data as of Q1 2025.</h5>
+    </div>
+    <div class="title-legend">
+        <div>
+          <span class="legend-key" style="background-color: #edce87"></span>
+          < 20% vacant
+      </div>
+      <div>
+          <span class="legend-key" style="background-color: #e9ab76"></span>
+          20-40%
+      </div>
+      <div>
+          <span class="legend-key" style="background-color: #d08686"></span>
+          40-60%
+      </div>
+      <div>
+          <span class="legend-key" style="background-color: #cf6566"></span>
+          60-80%
+      </div>
+      <div>
+          <span class="legend-key" style="background-color: #ba142d"></span>
+          > 80%
+      </div>
+
+  </div>
+  <div class="map-container">
+    <iframe src="map.html"></iframe>
+</div>
+<div>
+    <p id="credit">Map: Mengyuan Dong • Source: Colliers in Sacramento</p>
+</div>
+
+</body>
+</html>
